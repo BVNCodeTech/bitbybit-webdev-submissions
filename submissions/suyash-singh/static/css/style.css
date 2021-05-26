@@ -1,0 +1,770 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style-type: none;
+}
+
+.blue-title{
+    color: #07a3e2;
+}
+
+.btn{
+    border-radius: 10px;
+    background-color: #07a3e2;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    padding: 10px 30px;
+    transition: 500ms ease;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 25px;
+}
+
+/* ----------- Nav Start -------------- */
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #f9dada6e;
+    transition: 0.5s ease;
+    z-index: 1;
+}
+
+nav.sticky{
+    background-color: #ffeff2;
+}
+
+.site-title{
+    font-size: 1.5em;
+    font-family: 'KoHo', sans-serif;
+    letter-spacing: 5px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.nav li a{
+    color: #0052CC;
+}
+
+.nav li a:hover{
+    color: #0052cc7a;
+}
+
+.burger{
+    display: none;
+}
+
+.burger .line{
+    width: 1.5em;
+    height: 0.1em;
+    margin: 0.4em;
+    background-color: black;
+}
+
+/* ----------- Nav End -------------- */
+/* ----------- Hero start -------------- */
+
+.bg{
+    background-color: #d9e4f5;
+    background-image: linear-gradient(to bottom, pink, white);
+}
+
+.hero{
+    height: 90vh;
+    display: flex;
+    padding: 10vh 10vw;
+}
+
+.hero .left{
+    width: 50%;
+    align-self: center;
+    padding: 1em;
+}
+
+.hero .left h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 0.7em;
+}
+
+.hero .left p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+.hero img{
+    width: 35vw;
+    height: 40vh;
+    align-self: center;
+    margin-left: 2em;
+}
+
+/* ----------- Hero end -------------- */
+/* ----------- Why quadlabs Start -------------- */
+.why{
+    width: 80vw;
+    padding: 20px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15em;
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.why.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+.why img{
+    width: 35vw;
+    height: 37vh;
+    align-self: center;
+}
+
+.why-quadlabs{
+    width: 50%;
+}
+
+.why-quadlabs h1{
+    font-size: 2em;
+    margin-bottom: 0.8em;
+    text-align: center;
+}
+
+.why-quadlabs div{
+    text-align: center;
+}
+
+/* ----------- Why quadlabs Start -------------- */
+/* ----------- key benefits Start -------------- */
+.key-benfits{
+    width: 70vw;
+    margin: auto;
+    padding: 3em 0;
+    padding-bottom: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box{
+    width: 30%;
+    height: 100%;
+    border: 1px solid black;
+    text-align: center;
+    margin: 2em 1em;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.box h1{
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    padding: 10px;
+}
+
+.box img{
+    width: 100%; 
+    height: 40%;
+}
+
+/* ----------- key benefits End -------------- */
+/* ----------- Stats Start -------------- */
+.stats{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+    background-color: #ff01270d;
+    padding: 5em 0;
+}
+
+.stats-col{
+    width: 20vw;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0 2em;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(230 238 241);
+}
+
+.stats h2{
+    font-size: 1.7em;
+}
+
+.stats h3{
+    font-size: 1.2em;
+}
+
+.stats-col i{
+    font-size: 5em;
+    margin: 0.3em 0;
+}
+
+/* ----------- stats end -------------- */
+/* ----------- Features Start -------------- */
+.bg2{
+    background-color: #d9e4f5;
+    background-image: linear-gradient(to bottom, white, pink);
+}
+
+.feature{
+    width: 80vw;
+    padding: 20px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 5em 0;
+}
+.feature1, .feature2{
+    transform: translateY(20%);
+    opacity: 0;
+    transition: all 300ms ease;
+}
+.feature1.active, .feature2.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.feature1 .left h2, .feature2 .right h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    margin-bottom: 0.7em;
+}
+
+.feature1.left p, .feature2 .right p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+.feature1 .right, .feature2 .left{
+    width: 50%;
+    height: 40vh;
+    margin-left: 3em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.feature2 .left{
+    margin-right: 3em;
+}
+
+.feature2 .right, .feature1 .left{
+    width: 50%;
+    align-self: center;
+    padding: 1em;
+}
+/* ----------- Features End -------------- */
+/* ----------- Testimonials Start -------------- */
+
+.testimonials-heading{
+    padding: 1em;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Poppins', sans-serif;
+    color: #07a3e2;
+}
+
+.testimonials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    /* height: 60vh; */
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 5em;
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+
+.testimonials.active{
+    opacity: 1;
+}
+.testimonial{
+    width: 23%;
+    border: 1px solid grey;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.testimonial i{
+    font-size: 2em;
+    color: #07a3e2;
+}
+
+.testimonial .review{
+    padding: 20px 10px;
+}
+
+.testimonial .quote-left{
+    text-align: left;
+}
+
+.testimonial .quote-right{
+    text-align: right;
+}
+
+.testimonial .name{
+    color: #07a3e2;
+    font-family: 'KoHo', sans-serif;
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+.testimonial .work{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1em;
+}
+
+/* ----------- Testimonials End -------------- */
+/* ----------- Pricing Start -------------- */
+.pricing-heading{
+    font-family: 'KoHo', sans-serif;
+    margin: 1em;
+    font-size: 4em;
+    text-align: center;
+}
+
+.pricing{
+    display: flex;
+    width: 60vw;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 1em;
+    margin: auto;
+    margin-bottom: 10em;
+}
+
+.price-box{
+    border-radius: 15px;
+    border: 1px solid black;
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.price-box h1{
+    font-size: 2em;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    color:#07a3e2;
+}
+
+.price-box .price{
+    font-size: 2em;
+    padding: 1em 0;
+}
+.price-box p{
+    padding: 10px;
+    margin-bottom: 2em;
+}
+
+/* ----------- Pricing end -------------- */
+/* ----------- aticles Start -------------- */
+.articles-heading{
+    font-family: 'KoHo', sans-serif;
+    margin: 1em;
+    font-size: 4em;
+    text-align: center;
+}
+
+.articles{
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    margin: 5em auto;
+}
+
+.post{
+    width: 20vw;
+    background-color: #f5159b00;
+    border: 1px solid black;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+}
+
+.featured-image{
+    height: 20vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.post .date{
+    font-size: 1em;
+    text-transform: uppercase;
+    padding:20px 20px 10px 20px;
+    color: #e22b00;
+}
+
+.post h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+    padding: 0px 20px;
+}
+
+.post .excerpt{
+    padding: 0px 20px;
+}
+.social-icons{
+    display: flex;
+}
+.social-icons li{
+    margin: 10px;
+}
+
+.social-icons li a{
+    color: black;
+    font-size: 2em;
+}
+
+/* ----------- articles end -------------- */
+/* ----------- Contact start -------------- */
+.contact-form{
+    width: 80vw;
+    max-width: 1000px;
+    background-color: white;
+    margin: 3em auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    transform: translateY(20%);
+    opacity: 0;
+    transition: all 500ms ease;
+}
+
+.contact-form.active{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.contact-form h1{
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+.form-field{
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 1.2em;
+    margin: 1em;
+    border-radius: 8px;
+}
+
+.form-field label{
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.form-field input, .form-field textarea{
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    margin: .3em;
+    width: 100%;
+}
+
+.contact-form .btn{
+    color: white;
+    background-color: black;
+    width: 30%;
+    border-radius: 25px;
+    padding: 10px 0px;
+    transition: .4s ease;
+    border: none;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.contact-form .btn:hover{
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+}
+
+/* ----------- Contact end -------------- */
+/* ----------- footer Start -------------- */
+footer{
+    margin-top: 7em;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F4F5F7;
+}
+
+footer .social-icons{
+    width: 10%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .social-icons li i{
+    font-size: 1.5em;
+    transition: 300ms ease;
+}
+
+footer .social-icons li i:hover{
+    color: grey;
+}
+
+/* ----------- footer End -------------- */
+
+@media only screen and (max-width:1650px){
+    .hero img{
+        width: 40vw;
+        height: 32vh;
+        align-self: center;
+        margin-left: 3em;
+    }
+    .nav{
+        width: 50%;
+    }
+    .why img{
+        width: 40vw;
+        height: 35vh;
+        margin-right: 1em;
+    }
+    .key-benfits{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:1300px){
+    .hero img{
+        width: 45vw;
+        height: 24vh;
+        align-self: center;
+        margin-left: 3em;
+    }
+    .why img{
+        width: 42vw;
+        height: 24vh;
+        margin-right: 2em;
+    }
+    .box img{
+        height: 35%;
+    }
+    .box{
+        height: 90%;
+        width: 28%;
+    }
+    .testimonials{
+        width: 95%;
+    }
+    .testimonial i{
+        font-size: 1.5em;
+    }
+    .pricing{
+        width: 90%;
+    }
+    .articles{
+        flex-wrap: wrap;
+    }
+    .post{
+        width: 40vw;
+    }
+    
+}
+
+@media only screen and (max-width:1000px){
+    .hero img{
+        display: none;
+    }
+    .hero .left{
+        width: 70%;
+    }
+    .why img{
+        display: none;
+    }
+    .why-quadlabs{
+        width: 100%;
+        margin: auto;
+    }
+    .nav{
+        position: absolute;
+        right: 0;
+        display: flex;
+        top: 8vh;
+        flex-direction: column;
+        height: 91vh;
+        background-color: #f9dada6e;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-active{
+        transform: translateX(0%);
+    }
+    .nav li a{
+        font-size: 1.5em;
+        color: #07a3e2;
+    }
+    .box{
+        width: 40%;
+        height: 50%;
+    }
+    .box h1{
+        font-size: 1.1em;
+    }
+    .box p{
+        font-size: 1em;
+    }
+    .feature1 .right, .feature2 .left{
+        display: none;
+    }
+    .feature1 .left, .feature2 .right{
+        width: 100%;
+    }
+    .testimonial .review{
+        padding: 10px 0;
+        font-size: 0.9em;
+    }
+    .testimonial .name{
+        font-size: 1.3em;
+    }
+    .pricing-heading{
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .testimonials{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /* height: 100vh; */
+    }
+    .testimonial{
+        width: 45%;
+        margin: 1em 0;
+    }
+    .price-box h1, .price-box .price{
+        font-size: 1.5em;
+    }
+    .price-box p{
+        font-size: 0.9em;
+    }
+    .post{
+        width: 80vw;
+    }
+    .contact-form .btn{
+        font-size: 1em;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:630px){
+    .hero .left{
+        width: 100%;
+    }
+    .hero .left h1{
+        font-size: 2em;
+    }
+    .box{
+        width: 70%;
+        height: 55%;
+        margin: 1em auto;
+    }    
+    
+    .stats h2{
+        font-size: 1.2em;
+    }
+    
+    .stats h3{
+        font-size: 1em;
+    }
+    
+    .stats-col i{
+        font-size: 3em;
+        margin: 0.3em 0;
+    }
+    .stats-col{
+        width: 30%;
+        margin: 0 1em;
+        align-self: stretch;
+    }
+    .testimonials-heading{
+        font-size: 2.5em;
+    }
+    .pricing .btn{
+        font-size: 0.9em;
+        padding: 5px 10px;
+    }
+    .pricing{
+        flex-direction: column;
+    }
+    .price-box{
+        width: 100%;
+        margin: 1em auto;
+    }
+    .articles-heading{
+        font-size: 2.5em;
+    }
+    .contact-form h1{
+        font-size: 2em;
+    }
+    .form-field{
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 0.8em;
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .testimonial .review{
+        font-size: 0.8em;
+    }
+    .testimonial .name{
+        font-size: 1.1em;
+    }
+    .testimonial .work{
+        font-size: 0.9em;
+    }
+}
