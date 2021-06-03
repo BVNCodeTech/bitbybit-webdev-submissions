@@ -1,0 +1,180 @@
+<html>
+    <head>
+        <link rel="icon" href="time%20favicon2.png">
+        <title>Timeloft: Need to gonna fast!</title>
+        <style>
+            h2{
+                float: right;
+                margin-right: 60px;
+                text-shadow: 3px 3px 3px red;
+                font-size: 30px;
+                margin-top: 30px;
+            }
+        #head{
+            width: 100%;
+            height: 300px;
+            font-size: 25px;
+            color: blueviolet;
+            padding-top: 100px;
+            text-shadow: 3px 3px 5px red;
+        }
+        i{
+            color: dodgerblue;
+            text-shadow: 3px 3px  5px cyan;
+        }
+        nav{
+            position: fixed;
+            background-color: black;
+            color: blueviolet;
+            height: 100px;
+            width: 100%;
+            top: 0px;
+            z-index: 2;
+        }
+            nav img{
+                float: left;
+            }
+        .a, .a1{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 10px;
+            float: right;
+            padding-top: 25px;
+          }
+            .a1{
+                margin-right: 200px;
+            }
+        .a:hover, .a1:hover{
+            animation-name: colorch;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+        @keyframes colorch{
+            0%{text-decoration: overline; text-decoration-color: violet;}
+            25%{text-decoration: overline; text-decoration-color: red;}
+            50%{text-decoration: overline; text-decoration-color: yellow;}
+            75%{text-decoration: overline; text-decoration-color: greenyellow;}
+            100%{text-decoration: overline; text-decoration-color: deepskyblue;}
+        }
+        #banner img{
+            width: 23%;
+        }
+        #banner{
+            border-bottom-style: groove;
+            border-bottom-color: coral;
+            border-bottom-width: 10px;
+            margin-top: 20px;
+        }
+        #mid{
+            box-shadow: 5px 20px 20px 5px grey;
+            transform: scale(1.1)
+        }
+        #title1{
+            font-size: 50px;
+            animation-name: change;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        #info{
+            border-style: none double groove double;
+            border-color: red blue;
+            border-width: 8px 5px;
+            width: 1000px;
+            padding: 0 15px 15px 15px;
+            font-family: cursive;
+            font-size: 20px;
+        }
+            #left{
+                margin-left: 350px;
+                float: left;
+            }
+            #right{
+                margin-right: 350px;
+                float: right;
+            }
+        @keyframes change{
+            0%{color: dodgerblue; text-shadow: 3px 3px 5px yellowgreen; text-decoration: underline; text-decoration-style: double; text-decoration-color: dodgerblue;} 
+            33%{color: red; text-shadow: 3px 3px 5px cyan;text-decoration: underline; text-decoration-style: double; text-decoration-color: red;} 
+            66%{color: blue; text-shadow: 3px 3px 5px red;text-decoration: underline; text-decoration-style: double; text-decoration-color: blue;}
+            100%{color: dodgerblue; text-shadow: 3px 3px 5px yellowgreen; text-decoration: underline; text-decoration-style: double; text-decoration-color: dodgerblue;}} 
+            gg{
+                color: blueviolet;
+                text-shadow: 3px 3px 5px red;
+            }
+            #back{
+                transform: scale(0.5);
+                    float: right;
+            }
+            button{
+                margin-top: 80px;
+                margin-left: 15px;
+                background-image: url(deskop%20bg.jpg);
+                box-shadow: 5px 5px 3px grey;
+                color: azure;
+                border-radius: 20%;
+                height: 50px;
+                font-family: cursive;
+                font-style: bold;
+                border-style: double;
+                border-color: blue;
+            }
+            #download{
+                margin-left: 200px;
+            }
+            button:hover{
+                filter: sepia(80%);
+                color: white;
+            }
+            #features{
+                margin-top: 100px;
+                margin-bottom: 100px;
+                border-width: 8px;
+                border-style: groove;
+                border-color: red;
+                width: 50%;
+            }
+            video{
+                transform: scale(0.8);
+            }
+        </style>
+    </head>
+    <center>
+        <div id="navbar">
+            <nav align="center">
+            <img src="time%20favicon.png">
+            <a href="Contactbitbybit.html"class="a1">Contact Us</a>
+            <a href="teambitbybit.html"class="a">Our Team</a>
+            <a href="partnersbitbybit.html"class="a">Our Partners</a>
+            <a href="Secbitbybit.html"class="a">Security</a>
+            <a href="BitByBit%203.0%20Web%20Developement.html" class="a">Home</a>
+                <h2>Timeloft by <i>Quadlabs</i></h2>
+            </nav>
+        </div></center>
+    <body onload="onload()">
+        <a name="top"></a>
+        <div align="center" id="head">
+            <img src="time%20favicon2.png">
+            <h1>Timeloft by <i>Quadlabs</i></h1>
+        </div><center>
+        <div id="banner">
+                    <img src="tech.jpg">
+                    <img src="tech2.jpg" id="mid">
+                    <img src="time-management-banner_80328-49.jpg">
+        </div>
+        <div id="features">
+            <a href="Techbitbybit.html"><img src="ai logo.jpg"></a><h3>AI Equipped</h3>
+            <a href="Secbitbybit.html"><img src="cyber%20secure%20logo.png"></a><h3>More Secure than the Banks</h3>
+        </div></center>
+        <center><h1 id="title1">Website Tour</h1>
+            <video src="video_20210528_142149_edit.mp4" controls></video></center>
+        <center><h1 id="title1">Time is Precious!</h1></center>
+        <center><div id="info">
+            Time is an unvaluable thing. But it depends on how effecietly we use it. In this world and age, time has become a resource which is in true sense- limited. Whether you are the world richest man or an middle class man, you would only have twenty-four hours a day. Which is why we have launched this app as it is very important to manage time efficiently and effectively. So we are happy to present you the one and only <gg>Timeloft: </gg> <i>Need to gonna fast</i>. We guarantee that this app will make your life simple and you would do things before time. This app will not make you work till late night and early morning like most apps do. This app is AI powered and you can set your preferences that at which time you would like to work. Want to make a report?, this app can make that also as it will be connected with your all other apps including mail, messenger, albums etc. from which it will take the required data for the report. It will give you reminders of meetings or else record the meeting and make a summary of it. It is made in collaboration with the leading tech companies in the world like google and apple. It doesn't has any system requirements other than a good memory of about 400 Megabytes as it can adapt to any computer. But we recommend to use intel core i7 or higher processer. Worried about security? Read our <a href="Secbitbybit.html">Security Page</a>.
+            </div></center>
+        <a id="back" title="Back To Top" href="#top"><img src="backtotop.png"></a>
+        <div id="download">
+            <center><button>Download For Windows</button><button>Download For Mac(OS)</button><button>Download For Linux</button></center>
+            </div>
+ </body>
+</html>
